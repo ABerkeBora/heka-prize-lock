@@ -1,6 +1,6 @@
 # Prize Lock implementation rules
 
-This project is authorized for implementation and public source delivery. Own only this repository; keep its port3105, lockfile, environment and `.local/` state isolated. Use test-only Base Sepolia funds; no mainnet spend or paid services. Do not request or publish keys. Public source belongs to ABerkeBora; use repository-local verified identity.
+This project is authorized for implementation and public source delivery. Own only this repository; keep its port 3105, lockfile, environment and `.local/` state isolated. Use test-only Base Sepolia funds; no mainnet spend or paid services. Do not request or publish keys. Public source belongs to ABerkeBora; use repository-local verified identity.
 
 Selected sponsor: API3 — Any API in your contract. Before new application/contract work, read https://hackathon.tum-blockchain.com/prizes in the actual API3 tab and general submission tab, then its official starter https://github.com/api3dao/airnodehub-hackathon-starter. Recheck before claiming readiness. Keep mandatory qualification, submission evidence and judging preferences separate in TRACK_REQUIREMENTS.md. Fixtures do not replace live receipts.
 

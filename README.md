@@ -1,5 +1,7 @@
 # Prize Lock
 
+[Public source](https://github.com/ABerkeBora/heka-prize-lock) · default branch `codex/build`
+
 Prize Lock pre-funds an esports prize, buys an authenticated match result, and lets a bounded treasury agent trigger the winner's payment. The organizer fixes the match, recipients, oracle request and refund policy before funding. After one delegation, the executor purchases PandaScore data through API3 AirnodeHub and sends the valid result to the prize contract without another payment click.
 
 This is a locally runnable Base Sepolia application for the API3 **Any API in your contract** track. The included scenario uses an already-finished PandaScore match, **Team Synapse vs New Growth, match 1772358, 2–0**. Recipient addresses are isolated test wallets; they do not represent or belong to these teams. No real-value prize or live-event outcome is claimed.
@@ -89,6 +91,8 @@ npm run submit-proof -- response.json --broadcast
 ```
 
 The proof file may be the raw Airnode envelope or an object containing `proof`. The default command calls the deployed `validateResponse` without signing or paying. The read-only command also works without a wallet. `--broadcast` needs the local test wallet and attempts the actual fixed payout path. Use a funded fresh pool and a fresh response; old saved envelopes become stale, and a paid pool cannot pay again. The UI proof panel also lets judges inspect rejection cases and submit an envelope for validation.
+
+Fresh public-clone validation passed `npm ci`, production build, 18 executor/state tests and 27 contract tests without external source files or credentials. `evidence/clean-clone.json` records the check.
 
 `forge test` covers 27 cases, including the actual captured PandaScore signer, four failure categories, source timestamps, exact funding, fractional IDs, refund timing, failed transfers and replay. See [contract design](CONTRACT_DESIGN.md) for the complete state machine and vendored official source provenance.
 

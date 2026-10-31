@@ -30,7 +30,7 @@ The project serves small event organizers, sponsors and prize recipients who nee
 
 ## Submission fields
 
-- Repository target: https://github.com/ABerkeBora/heka-prize-lock — creation/push must be confirmed before submission.
+- Public repository: https://github.com/ABerkeBora/heka-prize-lock — created and pushed; default branch codex/build.
 - Contract: https://sepolia.basescan.org/address/0x1ecea4fec536541e494fbf48c3296b10ce7dc502
 - Data purchase: https://sepolia.basescan.org/tx/0xec74409792c2c1b1e12855f41da1692d5727b4e3849bd45bf61660905f6589a3
 - Prize payout: https://sepolia.basescan.org/tx/0x0b2be2f04133ec2131040e26828101f600aaa7cc49eb30ed5e9f6a32398299f3

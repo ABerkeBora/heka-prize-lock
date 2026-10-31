@@ -26,7 +26,7 @@
     "gasBudgetWei": "300000000000000",
     "maxActionGasWei": "150000000000000",
     "gasReservedWei": "39417400000000",
-    "gasSpentWei": "1948404000000",
+    "gasSpentWei": "1948404002074",
     "pollIntervalSeconds": 60,
     "status": "paid",
     "createdAt": "2026-10-31T02:47:43.003Z",
@@ -96,7 +96,8 @@
     "contractAddress": null,
     "gasUsed": "324734",
     "effectiveGasPrice": "6000000",
-    "gasCostWei": "1948404000000"
+    "l1FeeWei": "2074",
+    "gasCostWei": "1948404002074"
   },
   "chain": {
     "state": 2,
