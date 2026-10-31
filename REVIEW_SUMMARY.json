@@ -1,0 +1,36 @@
+{
+  "project": "Prize Lock",
+  "checkedAtUtc": "2026-10-31T03:45:24.987186+00:00",
+  "v1": {
+    "url": "http://localhost:3105/",
+    "status": "PASS; gerçek payout tamam",
+    "baselineCommit": "7ef30b375ea02b84736d5a39654cb7cec7866b4b"
+  },
+  "v2": {
+    "url": "http://localhost:3105/next",
+    "status": "Fonlu ve Waiting; canlı terminal PENDING",
+    "commit": "93aa5d19214d55bf5ece2036394506f241cb2af8"
+  },
+  "changes": [
+    "İmzalı gelecek maçla sonuç öncesi fonlama",
+    "Sabit schedule, finality ve refund politikası",
+    "Ayrı API/state/executor; V1 kanıtları korundu"
+  ],
+  "verified": [
+    "evidence/v2/funding.json",
+    "evidence/v2/waiting.json",
+    "evidence/v2/live-tamper-checks.json",
+    "evidence/v2/chain-verification.json",
+    "evidence/v2/browser-qa.json",
+    "evidence/v2/verification.json"
+  ],
+  "pending": [
+    "V2 canlı final payout/refund",
+    "Video kaydı ve Devfolio gönderimi"
+  ],
+  "recommendation": {
+    "version": "V1",
+    "reason": "V1 gerçek ödeme ve dört ret ile jüriye en açık uçtan uca akışı gösteriyor. V2’yi ön fonlama ve bekleme değerini anlatan ek ekran olarak gösterin.",
+    "demoRisk": "low"
+  }
+}

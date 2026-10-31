@@ -14,7 +14,7 @@ API3 only. Start gate 31 October 2026 ~04:30 Europe/Berlin: correct sponsor tab,
 | Judges submit own proof | Namespaced Proofbench editor; scripts/submit-proof.ts under withScope(v2Scope), or shared proof/check API; no old intents consumed | PASS |
 | Description users/forgery/missing source signals | README V2+CONTRACT_V2: organizer/teams, false result diverts fixed prize, authoritative correction/finality signal absent | PASS (prepared copy) |
 | Live final payout/refund | Match has not finished; current prize Funded/Waiting. Synthetic final+refund tests are not a live result | PENDING |
-| Public repository/README | Same repo codex/next; v1-baseline frozen; publication verified during delivery | PENDING until push |
+| Public repository/README | Same repo codex/next; v1-baseline frozen; public branch+baseline tag pushed; GitHub author/committer ABerkeBora verified; public-clone build/tests/read-only PASS | PASS |
 | <=2.5minute video and Devfolio description/submission | V1 presentation outline exists; actual video/submission not made | PENDING |
 
 All files above are under `evidence/v2/` unless named as source/test. Funding tx: `0x6d01987ae940591778f62ab2b9c589555ac0d6879e01f735dafa426182e6f63c`. Paid monitor observation: `0xdc2a117dae0c138798d9be19a1ada5726b817932abfbb5eb9ad0cabfe3f3e579`. Funded match 1713127 starts06:00UTC/**07:00Europe/Berlin**. Teams are real provider records; beneficiary wallets do not represent them.
