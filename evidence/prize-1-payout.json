@@ -1,0 +1,110 @@
+{
+  "intentId": "prize-1-treasury-observation-1",
+  "mandate": {
+    "id": "prize-1-treasury",
+    "network": "eip155:84532",
+    "asset": "0xbeA34973e5f67F18F656A2C6070C64326C791808",
+    "allowedTool": "getMatch",
+    "endpoint": "https://airnode-pandascore.fly.dev/",
+    "contract": "0xe815df0357c2923daf939d8cde75854435823ed2",
+    "payer": "0x6660e1d556d8fB44cB81D36F07272a01995f47A5",
+    "payTo": "0x1505FD562AC2Fb4307B85BC6c672FfeafB4d57A7",
+    "beneficiaries": [
+      "0xB5b87554f9Eff50de04C75B96b2636e6c83cB2fb",
+      "0x867453BC2989E3beF4dE9f42e0E5B089c80ebaa9"
+    ],
+    "expiresAt": 1793416424,
+    "maxCalls": 3,
+    "callsUsed": 1,
+    "maxActions": 4,
+    "payoutActions": 1,
+    "maxApiFee": "10000",
+    "totalApiBudget": "30000",
+    "apiReserved": "10000",
+    "apiSpent": "10000",
+    "gasBudgetWei": "300000000000000",
+    "maxActionGasWei": "150000000000000",
+    "gasReservedWei": "39418900000000",
+    "gasSpentWei": "1948476000000",
+    "pollIntervalSeconds": 60,
+    "status": "paid",
+    "createdAt": "2026-10-31T02:43:44.825Z",
+    "currentIntent": "prize-1-treasury-observation-1",
+    "lastObservedAt": "2026-10-31T02:43:46.884Z"
+  },
+  "pool": {
+    "id": "prize-1",
+    "status": "paid",
+    "policy": {
+      "airnode": "0xd9D29FEDc3737aD5198611457fE04aB08a739C7b",
+      "requestHash": "0x4b6bc10a698da69deba7c1942aec697d76532a6835b8b430c1393578841761fe",
+      "matchId": "1772358",
+      "teamA": "139124",
+      "teamB": "137905",
+      "walletA": "0xB5b87554f9Eff50de04C75B96b2636e6c83cB2fb",
+      "walletB": "0x867453BC2989E3beF4dE9f42e0E5B089c80ebaa9",
+      "organizer": "0x6660e1d556d8fB44cB81D36F07272a01995f47A5",
+      "prizeWei": "100000000000000",
+      "fundingClosesAt": 1793421781,
+      "settlementDeadline": 1793500981,
+      "refundGrace": 600,
+      "maxEnvelopeAge": 120,
+      "finalityDelay": 60,
+      "sourceObservationMin": 1793412295,
+      "sourceObservationMax": 1793500981
+    },
+    "request": {
+      "operation": "getMatch",
+      "parameters": {
+        "match_id_or_slug": "1772358"
+      },
+      "responseProjection": {
+        "id": "/id",
+        "status": "/status",
+        "winnerId": "/winner_id",
+        "endAt": "/end_at",
+        "modifiedAt": "/modified_at"
+      }
+    },
+    "createdAt": "2026-10-31T02:43:02.167Z",
+    "address": "0xe815df0357c2923daf939d8cde75854435823ed2",
+    "deploymentTx": "0x6417dfa2ff76035e31a852fbc18780f4639b9d622b877ab61db42b0a0064522a",
+    "deploymentGasWei": "14325798000000",
+    "fundingTx": "0x4efb4a9fe346f4667cbe4e232c152280024c3d8611183597a0d3c1ddd985ee3e",
+    "payoutTx": "0x4378935b116d7cd765fc4fea40b26f63f94cfb542d390892ae3a6af5bcdd8bb1"
+  },
+  "proof": {
+    "airnode": "0xd9D29FEDc3737aD5198611457fE04aB08a739C7b",
+    "requestHash": "0x4b6bc10a698da69deba7c1942aec697d76532a6835b8b430c1393578841761fe",
+    "timestamp": "1793414626",
+    "data": "{\"endAt\":\"2026-10-31T02:04:55Z\",\"id\":1772358,\"modifiedAt\":\"2026-10-31T02:26:16Z\",\"status\":\"finished\",\"winnerId\":139124}",
+    "signature": "0xd69dacf531aed732506f4ce0afeece97494914acee1288b30eb50642f38a742743ac87a263b739ed4d4ac40acc9c29efd85ea049981b751219be9c898aad2d611b"
+  },
+  "apiPayment": {
+    "success": true,
+    "transaction": "0xda6c942ebf5f53de9a1831fd4b9ddbe6630856231a32fead61a3e5a9f33cc5e7",
+    "network": "eip155:84532",
+    "payer": "0x6660e1d556d8fb44cb81d36f07272a01995f47a5"
+  },
+  "validator": "on-chain validateResponse passed",
+  "submittedTransaction": "0x4378935b116d7cd765fc4fea40b26f63f94cfb542d390892ae3a6af5bcdd8bb1",
+  "receipt": {
+    "transactionHash": "0x4378935b116d7cd765fc4fea40b26f63f94cfb542d390892ae3a6af5bcdd8bb1",
+    "blockNumber": "52463802",
+    "status": "success",
+    "contractAddress": null,
+    "gasUsed": "324746",
+    "effectiveGasPrice": "6000000",
+    "gasCostWei": "1948476000000"
+  },
+  "chain": {
+    "state": 2,
+    "winningTeam": "139124",
+    "paidTo": "0xB5b87554f9Eff50de04C75B96b2636e6c83cB2fb",
+    "acceptedProofHash": "0x515d945f1e5266db0332b60cc7446ff45a34f5f748eaea70d9109225bf936a12",
+    "balanceWei": "0"
+  },
+  "recipientBalanceBeforeWei": "1000000000000000",
+  "recipientBalanceAfterWei": "1100000000000000",
+  "deliveredPrizeWei": "100000000000000"
+}

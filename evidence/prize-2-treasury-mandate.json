@@ -1,0 +1,31 @@
+{
+  "id": "prize-2-treasury",
+  "network": "eip155:84532",
+  "asset": "0xbeA34973e5f67F18F656A2C6070C64326C791808",
+  "allowedTool": "getMatch",
+  "requestHash": "0x4b6bc10a698da69deba7c1942aec697d76532a6835b8b430c1393578841761fe",
+  "endpoint": "https://airnode-pandascore.fly.dev/",
+  "contract": "0x1ecea4fec536541e494fbf48c3296b10ce7dc502",
+  "payer": "0x6660e1d556d8fB44cB81D36F07272a01995f47A5",
+  "payTo": "0x1505FD562AC2Fb4307B85BC6c672FfeafB4d57A7",
+  "beneficiaries": [
+    "0xB5b87554f9Eff50de04C75B96b2636e6c83cB2fb",
+    "0x867453BC2989E3beF4dE9f42e0E5B089c80ebaa9"
+  ],
+  "expiresAt": 1793416662,
+  "maxCalls": 3,
+  "callsUsed": 0,
+  "maxActions": 4,
+  "payoutActions": 0,
+  "maxApiFee": "10000",
+  "totalApiBudget": "30000",
+  "apiReserved": "0",
+  "apiSpent": "0",
+  "gasBudgetWei": "300000000000000",
+  "maxActionGasWei": "150000000000000",
+  "gasReservedWei": "0",
+  "gasSpentWei": "0",
+  "pollIntervalSeconds": 60,
+  "status": "active",
+  "createdAt": "2026-10-31T02:47:43.003Z"
+}

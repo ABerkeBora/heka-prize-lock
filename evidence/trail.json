@@ -1,0 +1,347 @@
+[
+  {
+    "id": "2de91744-62aa-402a-8c95-5c37282536c3",
+    "at": "2026-10-31T02:41:52.331Z",
+    "type": "api",
+    "title": "API payment authorized",
+    "status": "pending",
+    "intentId": "discovery",
+    "amount": "10000",
+    "asset": "aUSD",
+    "detail": "One EIP-3009 nonce reserved for this request."
+  },
+  {
+    "id": "53a742d5-79ea-4f00-92c2-b0746c2d5461",
+    "at": "2026-10-31T02:41:53.812Z",
+    "type": "api",
+    "title": "Signed match data delivered",
+    "status": "confirmed",
+    "intentId": "discovery",
+    "amount": "10000",
+    "asset": "aUSD",
+    "txHash": "0x95a22877e4ed626f06969e74f98abc117c1a60a51d3b50fadd44a77a061c9e70",
+    "detail": "Provider fee confirmed. This fee is separate from the prize."
+  },
+  {
+    "id": "9ecbd98c-79f1-42f9-acba-60c5af8a8033",
+    "at": "2026-10-31T02:42:07.888Z",
+    "type": "api",
+    "title": "API payment authorized",
+    "status": "pending",
+    "intentId": "preflight-match",
+    "amount": "10000",
+    "asset": "aUSD",
+    "detail": "One EIP-3009 nonce reserved for this request."
+  },
+  {
+    "id": "8b1e754a-8358-4f26-adad-00adbb7a5078",
+    "at": "2026-10-31T02:42:09.263Z",
+    "type": "api",
+    "title": "Signed match data delivered",
+    "status": "confirmed",
+    "intentId": "preflight-match",
+    "amount": "10000",
+    "asset": "aUSD",
+    "txHash": "0xf7841761e8eab2641191b9a3f3aa19665db0e077d67c0120762c828d26bb55e7",
+    "detail": "Provider fee confirmed. This fee is separate from the prize."
+  },
+  {
+    "id": "1adaa635-f343-4db7-ac72-1db177e7b598",
+    "at": "2026-10-31T02:43:06.460Z",
+    "type": "transaction",
+    "title": "Transaction submitted",
+    "status": "pending",
+    "txHash": "0x6417dfa2ff76035e31a852fbc18780f4639b9d622b877ab61db42b0a0064522a",
+    "intentId": "prize-1-deploy"
+  },
+  {
+    "id": "08d68a37-06f7-4311-aa4a-0bffe45dd996",
+    "at": "2026-10-31T02:43:06.664Z",
+    "type": "pool",
+    "title": "Prize contract deployed",
+    "status": "confirmed",
+    "txHash": "0x6417dfa2ff76035e31a852fbc18780f4639b9d622b877ab61db42b0a0064522a",
+    "detail": "Match, recipients and settlement rules are fixed."
+  },
+  {
+    "id": "70cb58ee-1222-4477-b89f-3800b11431ad",
+    "at": "2026-10-31T02:43:09.343Z",
+    "type": "transaction",
+    "title": "Transaction submitted",
+    "status": "pending",
+    "txHash": "0x4efb4a9fe346f4667cbe4e232c152280024c3d8611183597a0d3c1ddd985ee3e",
+    "intentId": "prize-1-fund"
+  },
+  {
+    "id": "c3064751-68cf-4a36-8af3-9d12ebaf1304",
+    "at": "2026-10-31T02:43:10.193Z",
+    "type": "fund",
+    "title": "Prize locked",
+    "status": "confirmed",
+    "txHash": "0x4efb4a9fe346f4667cbe4e232c152280024c3d8611183597a0d3c1ddd985ee3e",
+    "amount": "100000000000000",
+    "asset": "test ETH",
+    "detail": "Held by the contract until a valid final result or fixed refund deadline."
+  },
+  {
+    "id": "74a20a48-818d-4fba-9725-79451e1d8b14",
+    "at": "2026-10-31T02:43:44.856Z",
+    "type": "mandate",
+    "title": "Treasury agent delegated",
+    "status": "confirmed",
+    "detail": "At most 3 priced observations and one fixed-recipient payout. No automatic top-up."
+  },
+  {
+    "id": "1117dfed-0467-45ec-8c73-2944b8986157",
+    "at": "2026-10-31T02:43:45.450Z",
+    "type": "api",
+    "title": "API payment authorized",
+    "status": "pending",
+    "intentId": "prize-1-treasury-observation-1",
+    "amount": "10000",
+    "asset": "aUSD",
+    "detail": "One EIP-3009 nonce reserved for this request."
+  },
+  {
+    "id": "a1e75d12-6fa5-45a7-9af5-5b046179ff36",
+    "at": "2026-10-31T02:43:46.886Z",
+    "type": "api",
+    "title": "Signed match data delivered",
+    "status": "confirmed",
+    "intentId": "prize-1-treasury-observation-1",
+    "amount": "10000",
+    "asset": "aUSD",
+    "txHash": "0xda6c942ebf5f53de9a1831fd4b9ddbe6630856231a32fead61a3e5a9f33cc5e7",
+    "detail": "Provider fee confirmed. This fee is separate from the prize."
+  },
+  {
+    "id": "2fc86ad3-8c1a-4d9f-a025-25ac3a3dcb65",
+    "at": "2026-10-31T02:43:47.038Z",
+    "type": "validator",
+    "title": "Final result verified",
+    "status": "confirmed",
+    "detail": "Pinned signer, exact request, final winner and both timestamps passed on-chain simulation."
+  },
+  {
+    "id": "153d28b8-0a0a-44f6-9123-23b3e8c81ae0",
+    "at": "2026-10-31T02:43:48.902Z",
+    "type": "transaction",
+    "title": "Transaction submitted",
+    "status": "pending",
+    "txHash": "0x4378935b116d7cd765fc4fea40b26f63f94cfb542d390892ae3a6af5bcdd8bb1",
+    "intentId": "prize-1-payout"
+  },
+  {
+    "id": "85e77e86-ecdb-44ad-837a-8a91875a1ddf",
+    "at": "2026-10-31T02:43:50.411Z",
+    "type": "payout",
+    "title": "Prize paid to winner",
+    "status": "confirmed",
+    "txHash": "0x4378935b116d7cd765fc4fea40b26f63f94cfb542d390892ae3a6af5bcdd8bb1",
+    "amount": "100000000000000",
+    "asset": "test ETH",
+    "detail": "Fixed team wallet received the prize. The same pool cannot pay again."
+  },
+  {
+    "id": "2e60bc1c-5d85-433b-ac83-cf454ed51164",
+    "at": "2026-10-31T02:46:26.445Z",
+    "type": "transaction",
+    "title": "Transaction submitted",
+    "status": "confirmed",
+    "txHash": "0xcb4fe0ad063e2eeb090f7fc8a0993845df1f0786e1abefceae464f68804c7211",
+    "intentId": "prize-2-deploy"
+  },
+  {
+    "id": "fe2b7989-953d-4859-9c88-b3c97e689f03",
+    "at": "2026-10-31T02:46:27.399Z",
+    "type": "pool",
+    "title": "Prize contract deployed",
+    "status": "confirmed",
+    "txHash": "0xcb4fe0ad063e2eeb090f7fc8a0993845df1f0786e1abefceae464f68804c7211",
+    "detail": "Match, recipients and settlement rules are fixed."
+  },
+  {
+    "id": "dceb1018-dcaa-48d8-9da0-97c1d1ff212b",
+    "at": "2026-10-31T02:46:29.501Z",
+    "type": "transaction",
+    "title": "Transaction submitted",
+    "status": "confirmed",
+    "txHash": "0x0307e0572cfdd3ec0fb99569c07887a479688a9c919b998d657e2bb5f14b24c6",
+    "intentId": "prize-2-fund"
+  },
+  {
+    "id": "d7befb2f-bc83-4352-b3ff-9298fa15f7be",
+    "at": "2026-10-31T02:46:30.286Z",
+    "type": "fund",
+    "title": "Prize locked",
+    "status": "confirmed",
+    "txHash": "0x0307e0572cfdd3ec0fb99569c07887a479688a9c919b998d657e2bb5f14b24c6",
+    "amount": "100000000000000",
+    "asset": "test ETH",
+    "detail": "Held by the contract until a valid final result or fixed refund deadline."
+  },
+  {
+    "id": "2e0bdc6b-692a-4f32-8bdb-1456125a45df",
+    "at": "2026-10-31T02:46:45.582Z",
+    "type": "transaction",
+    "title": "Transaction submitted",
+    "status": "reverted",
+    "txHash": "0x249187a28e48a7076fe726469edbca5ebabd390ca6e52f0dcf1532a5d84294f5",
+    "intentId": "prize-2-tamper-edited"
+  },
+  {
+    "id": "f14b8c59-0dec-4021-aa48-f50250a134a7",
+    "at": "2026-10-31T02:46:47.054Z",
+    "type": "proof",
+    "title": "edited proof rejected",
+    "status": "rejected",
+    "detail": "NotSignedByAirnode",
+    "txHash": "0x249187a28e48a7076fe726469edbca5ebabd390ca6e52f0dcf1532a5d84294f5"
+  },
+  {
+    "id": "61310636-a11a-4c70-8911-2d546dec4762",
+    "at": "2026-10-31T02:46:49.724Z",
+    "type": "transaction",
+    "title": "Transaction submitted",
+    "status": "reverted",
+    "txHash": "0x5d5d1abdbb8cb17cf34f2f4b1cdae5e3747fa88263544add52dfed790bce454a",
+    "intentId": "prize-2-tamper-stale"
+  },
+  {
+    "id": "e9601e1b-eba2-4f49-a696-efae43809548",
+    "at": "2026-10-31T02:46:50.738Z",
+    "type": "proof",
+    "title": "stale proof rejected",
+    "status": "rejected",
+    "detail": "ResponseTooOld",
+    "txHash": "0x5d5d1abdbb8cb17cf34f2f4b1cdae5e3747fa88263544add52dfed790bce454a"
+  },
+  {
+    "id": "acf7baab-f98f-4405-8124-0353bac75418",
+    "at": "2026-10-31T02:46:52.897Z",
+    "type": "transaction",
+    "title": "Transaction submitted",
+    "status": "reverted",
+    "txHash": "0x7a4bcc6098eb33dbbe85b12ece70fff54856467817e3dd76bb97c0fda17a50f4",
+    "intentId": "prize-2-tamper-wrong-request"
+  },
+  {
+    "id": "2161be9d-92bb-40d9-887d-8d64e4cae485",
+    "at": "2026-10-31T02:46:54.075Z",
+    "type": "proof",
+    "title": "wrong-request proof rejected",
+    "status": "rejected",
+    "detail": "NotSignedByAirnode",
+    "txHash": "0x7a4bcc6098eb33dbbe85b12ece70fff54856467817e3dd76bb97c0fda17a50f4"
+  },
+  {
+    "id": "8b5e15f6-4b08-413c-8d5d-95c0149667ed",
+    "at": "2026-10-31T02:46:55.396Z",
+    "type": "transaction",
+    "title": "Transaction submitted",
+    "status": "reverted",
+    "txHash": "0xa8dc2fe70bf64ce44c54be0a1a95dc2fc3a9e4eea2e155d0825e187ca7ff5df0",
+    "intentId": "prize-2-tamper-wrong-signer"
+  },
+  {
+    "id": "a0ad3ced-ad89-401e-ab21-46af7caa5db8",
+    "at": "2026-10-31T02:46:56.152Z",
+    "type": "proof",
+    "title": "wrong-signer proof rejected",
+    "status": "rejected",
+    "detail": "NotSignedByAirnode",
+    "txHash": "0xa8dc2fe70bf64ce44c54be0a1a95dc2fc3a9e4eea2e155d0825e187ca7ff5df0"
+  },
+  {
+    "id": "8b3234ef-bc89-4743-9d25-94e8a0d3bfe8",
+    "poolId": "prize-2",
+    "at": "2026-10-31T02:47:43.004Z",
+    "type": "mandate",
+    "title": "Treasury agent delegated",
+    "status": "confirmed",
+    "detail": "At most 3 priced observations and one fixed-recipient payout. No automatic top-up."
+  },
+  {
+    "id": "51707dc0-b536-496a-99a7-7e5c5e306b17",
+    "poolId": "prize-2",
+    "at": "2026-10-31T02:47:43.873Z",
+    "type": "api",
+    "title": "API payment authorized",
+    "status": "pending",
+    "intentId": "prize-2-treasury-observation-1",
+    "amount": "10000",
+    "asset": "aUSD",
+    "detail": "One EIP-3009 nonce reserved for this request."
+  },
+  {
+    "id": "29827231-7964-4904-9be4-6def7074f32a",
+    "poolId": "prize-2",
+    "at": "2026-10-31T02:47:45.320Z",
+    "type": "api",
+    "title": "Signed match data delivered",
+    "status": "confirmed",
+    "intentId": "prize-2-treasury-observation-1",
+    "amount": "10000",
+    "asset": "aUSD",
+    "txHash": "0xec74409792c2c1b1e12855f41da1692d5727b4e3849bd45bf61660905f6589a3",
+    "detail": "Exact provider token transfer and consumed nonce verified. This fee is separate from the prize."
+  },
+  {
+    "id": "a0f9826b-1f06-41fe-bb43-35f9c2a5c7e6",
+    "poolId": "prize-2",
+    "at": "2026-10-31T02:47:45.441Z",
+    "type": "validator",
+    "title": "Final result verified",
+    "status": "confirmed",
+    "detail": "Pinned signer, exact request, final winner and both timestamps passed on-chain simulation."
+  },
+  {
+    "id": "9df21690-ddf4-4e72-9548-b309ee6a1790",
+    "poolId": "prize-2",
+    "at": "2026-10-31T02:47:47.172Z",
+    "type": "transaction",
+    "title": "Transaction submitted",
+    "status": "confirmed",
+    "txHash": "0x0b2be2f04133ec2131040e26828101f600aaa7cc49eb30ed5e9f6a32398299f3",
+    "intentId": "prize-2-payout"
+  },
+  {
+    "id": "257bdcaa-edc8-49b6-af88-9ff9ba942329",
+    "poolId": "prize-2",
+    "at": "2026-10-31T02:47:48.177Z",
+    "type": "payout",
+    "title": "Prize paid to winner",
+    "status": "confirmed",
+    "txHash": "0x0b2be2f04133ec2131040e26828101f600aaa7cc49eb30ed5e9f6a32398299f3",
+    "amount": "100000000000000",
+    "asset": "test ETH",
+    "detail": "Fixed team wallet received the prize. The same pool cannot pay again."
+  },
+  {
+    "id": "b93bce2f-d269-4b74-8e42-5df15aada3c8",
+    "poolId": "prize-2",
+    "at": "2026-10-31T02:48:53.999Z",
+    "type": "validator",
+    "title": "Duplicate payout blocked",
+    "status": "rejected",
+    "detail": "Contract is already paid; known receipt reconciled, no API purchase or new transaction."
+  },
+  {
+    "id": "cdc1cb3b-ebe4-4798-be22-d3865cddf379",
+    "poolId": "prize-2",
+    "at": "2026-10-31T02:49:14.736Z",
+    "type": "validator",
+    "title": "Duplicate payout blocked",
+    "status": "rejected",
+    "detail": "Contract is already paid; known receipt reconciled, no API purchase or new transaction."
+  },
+  {
+    "id": "5928f32c-edb5-4aa7-909c-73558dce3d97",
+    "poolId": "prize-2",
+    "at": "2026-10-31T02:51:17.525Z",
+    "type": "proof",
+    "title": "edited proof rejected",
+    "status": "rejected",
+    "detail": "NotSignedByAirnode"
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "id": "prize-1",
+  "status": "funded",
+  "policy": {
+    "airnode": "0xd9D29FEDc3737aD5198611457fE04aB08a739C7b",
+    "requestHash": "0x4b6bc10a698da69deba7c1942aec697d76532a6835b8b430c1393578841761fe",
+    "matchId": "1772358",
+    "teamA": "139124",
+    "teamB": "137905",
+    "walletA": "0xB5b87554f9Eff50de04C75B96b2636e6c83cB2fb",
+    "walletB": "0x867453BC2989E3beF4dE9f42e0E5B089c80ebaa9",
+    "organizer": "0x6660e1d556d8fB44cB81D36F07272a01995f47A5",
+    "prizeWei": "100000000000000",
+    "fundingClosesAt": 1793421781,
+    "settlementDeadline": 1793500981,
+    "refundGrace": 600,
+    "maxEnvelopeAge": 120,
+    "finalityDelay": 60,
+    "sourceObservationMin": 1793412295,
+    "sourceObservationMax": 1793500981
+  },
+  "request": {
+    "operation": "getMatch",
+    "parameters": {
+      "match_id_or_slug": "1772358"
+    },
+    "responseProjection": {
+      "id": "/id",
+      "status": "/status",
+      "winnerId": "/winner_id",
+      "endAt": "/end_at",
+      "modifiedAt": "/modified_at"
+    }
+  },
+  "createdAt": "2026-10-31T02:43:02.167Z",
+  "address": "0xe815df0357c2923daf939d8cde75854435823ed2",
+  "deploymentTx": "0x6417dfa2ff76035e31a852fbc18780f4639b9d622b877ab61db42b0a0064522a",
+  "deploymentGasWei": "14325798000000",
+  "fundingTx": "0x4efb4a9fe346f4667cbe4e232c152280024c3d8611183597a0d3c1ddd985ee3e"
+}

@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-31T02:55:02.177Z",
+  "network": 84532,
+  "address": "0x1ecea4fec536541e494fbf48c3296b10ce7dc502",
+  "policy": {
+    "airnode": "0xd9D29FEDc3737aD5198611457fE04aB08a739C7b",
+    "requestHash": "0x4b6bc10a698da69deba7c1942aec697d76532a6835b8b430c1393578841761fe",
+    "matchId": "1772358",
+    "teamA": "139124",
+    "teamB": "137905",
+    "walletA": "0xB5b87554f9Eff50de04C75B96b2636e6c83cB2fb",
+    "walletB": "0x867453BC2989E3beF4dE9f42e0E5B089c80ebaa9",
+    "organizer": "0x6660e1d556d8fB44cB81D36F07272a01995f47A5",
+    "prizeWei": "100000000000000",
+    "fundingClosesAt": "1793421984",
+    "settlementDeadline": "1793501184",
+    "maxEnvelopeAge": "120",
+    "finalityDelay": "60",
+    "sourceObservationMin": "1793412295",
+    "sourceObservationMax": "1793501184"
+  },
+  "refundAvailableAt": "1793501784",
+  "chain": {
+    "state": 2,
+    "winningTeam": "139124",
+    "paidTo": "0xB5b87554f9Eff50de04C75B96b2636e6c83cB2fb",
+    "acceptedProofHash": "0x4a33242604b5f8a0a0016806673ddc9c1126f0e5f5950237e558e14a6f78e9cf",
+    "balanceWei": "0"
+  },
+  "rejections": [
+    {
+      "case": "edited",
+      "txHash": "0x249187a28e48a7076fe726469edbca5ebabd390ca6e52f0dcf1532a5d84294f5",
+      "status": "reverted"
+    },
+    {
+      "case": "stale",
+      "txHash": "0x5d5d1abdbb8cb17cf34f2f4b1cdae5e3747fa88263544add52dfed790bce454a",
+      "status": "reverted"
+    },
+    {
+      "case": "wrong-request",
+      "txHash": "0x7a4bcc6098eb33dbbe85b12ece70fff54856467817e3dd76bb97c0fda17a50f4",
+      "status": "reverted"
+    },
+    {
+      "case": "wrong-signer",
+      "txHash": "0xa8dc2fe70bf64ce44c54be0a1a95dc2fc3a9e4eea2e155d0825e187ca7ff5df0",
+      "status": "reverted"
+    }
+  ]
+}

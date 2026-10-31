@@ -1,0 +1,7 @@
+{
+  "airnode": "0xd9D29FEDc3737aD5198611457fE04aB08a739C7b",
+  "requestHash": "0x4b6bc10a698da69deba7c1942aec697d76532a6835b8b430c1393578841761fe",
+  "timestamp": "1793414864",
+  "data": "{\"endAt\":\"2026-10-31T02:04:55Z\",\"id\":1772358,\"modifiedAt\":\"2026-10-31T02:26:16Z\",\"status\":\"finished\",\"winnerId\":139124}",
+  "signature": "0x509d0812a4e889fc8e7c9204236fba4a99408837f6d78bed75bafb943f2c990845ce280800a6fe03fd544c7095fc54cdf0b7820caed4aa7e7a571e758811c0031b"
+}

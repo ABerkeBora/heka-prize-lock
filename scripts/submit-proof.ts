@@ -1,0 +1,10 @@
+import { readFileSync } from 'node:fs';
+import { exclusive,readJson } from '../server/store.ts';
+import { publicClient } from '../server/config.ts';
+import { abi,sendTx,submitRequest } from '../server/chain.ts';
+import { toHex } from 'viem';
+const path=process.argv[2];if(!path)throw new Error('Usage: npm run submit-proof -- response.json [--broadcast]');
+const json=JSON.parse(readFileSync(path,'utf8'));const proof=json.proof||json;const pool=readJson('.local/pool.json')||readJson('evidence/deployment.json');
+if(!pool)throw new Error('Create or configure a pool first');
+await exclusive(async()=>{const result=await publicClient.readContract({address:pool.address,abi:abi(),functionName:'validateResponse',args:[BigInt(proof.timestamp),toHex(proof.data),proof.signature]});console.log('Contract accepted:',result);
+if(process.argv.includes('--broadcast')){const tx=await sendTx(`${pool.id}-manual-proof`,submitRequest(pool,proof));console.log('Submitted:',tx.hash);} });

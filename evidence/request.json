@@ -1,0 +1,13 @@
+{
+  "operation": "getMatch",
+  "parameters": {
+    "match_id_or_slug": "1772358"
+  },
+  "responseProjection": {
+    "id": "/id",
+    "status": "/status",
+    "winnerId": "/winner_id",
+    "endAt": "/end_at",
+    "modifiedAt": "/modified_at"
+  }
+}

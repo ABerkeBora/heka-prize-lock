@@ -1,0 +1,13 @@
+{
+  "address": "0x1ecea4fec536541e494fbf48c3296b10ce7dc502",
+  "chainRpc": "https://sepolia.base.org",
+  "checkedAt": "2026-10-31T02:47:24.347Z",
+  "deployedBytes": 10741,
+  "compiledBytes": 10741,
+  "immutableRanges": 39,
+  "normalizedBytecodeAndMetadataMatch": true,
+  "executableRuntimeMatch": true,
+  "normalizedDeployedSha256": "d5c8c534f3d19f08ff68e7f565e02769a4d1b4d71d0d6ba63f83b7199c0b3956",
+  "normalizedCompiledSha256": "d5c8c534f3d19f08ff68e7f565e02769a4d1b4d71d0d6ba63f83b7199c0b3956",
+  "note": "Immutable values are checked through policy getters separately. Ignoring CBOR metadata proves executable-runtime equivalence, not exact published-source verification."
+}

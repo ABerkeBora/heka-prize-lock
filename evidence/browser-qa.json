@@ -1,0 +1,127 @@
+{
+  "checkedAt": "2026-10-31T02:54:03.153Z",
+  "route": "CUA real in-app browser; production build",
+  "desktop": {
+    "controls": [
+      {
+        "height": 44,
+        "label": "Match treasury"
+      },
+      {
+        "height": 44,
+        "label": "Proof bench"
+      },
+      {
+        "height": 36.296875,
+        "label": "Refresh"
+      },
+      {
+        "height": 36.296875,
+        "label": "New prize"
+      },
+      {
+        "height": 36.296875,
+        "label": "Run check"
+      },
+      {
+        "height": 36.296875,
+        "label": "Run check"
+      },
+      {
+        "height": 36.296875,
+        "label": "Run check"
+      },
+      {
+        "height": 36.296875,
+        "label": "Run check"
+      },
+      {
+        "height": 28,
+        "label": "Copy to editor"
+      },
+      {
+        "height": 36.296875,
+        "label": "Validate response"
+      }
+    ],
+    "fonts": "loaded",
+    "gradients": 0,
+    "h1": "Proof bench",
+    "height": 900,
+    "horizontalOverflow": false,
+    "minFont": null,
+    "numericVariant": "normal",
+    "scrollWidth": 1440,
+    "width": 1440
+  },
+  "phone": {
+    "controls": [
+      {
+        "height": 44,
+        "label": "Match treasury"
+      },
+      {
+        "height": 44,
+        "label": "Proof bench"
+      },
+      {
+        "height": 44,
+        "label": "Refresh"
+      },
+      {
+        "height": 44,
+        "label": "New prize"
+      },
+      {
+        "height": 44,
+        "label": "Run check"
+      },
+      {
+        "height": 44,
+        "label": "Run check"
+      },
+      {
+        "height": 44,
+        "label": "Run check"
+      },
+      {
+        "height": 44,
+        "label": "Run check"
+      },
+      {
+        "height": 44,
+        "label": "Copy to editor"
+      },
+      {
+        "height": 44,
+        "label": "Validate response"
+      }
+    ],
+    "fonts": "loaded",
+    "gradients": 0,
+    "h1": "Proof bench",
+    "height": 844,
+    "horizontalOverflow": false,
+    "minFont": null,
+    "numericVariant": "normal",
+    "scrollWidth": 390,
+    "width": 390
+  },
+  "tablet": {
+    "width": 768,
+    "scrollWidth": 768,
+    "horizontalOverflow": false
+  },
+  "walkthrough": [
+    "match treasury state and actual payout explorer link",
+    "proof bench edited proof returned NotSignedByAirnode",
+    "custom malformed envelope returned Invalid proof envelope",
+    "RPC/server restart connection error recovered on refresh",
+    "1440/768/390 screenshots visually inspected"
+  ],
+  "notRun": "TasteSkill standalone inspect.mjs; CUA browser required by this session",
+  "limitations": [
+    "minFont and numericVariant probe was inconclusive; reviewed source and screenshots instead",
+    "economic writes tested through CLI; browser proof validation is read-only"
+  ]
+}

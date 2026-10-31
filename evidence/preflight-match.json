@@ -1,0 +1,35 @@
+{
+  "intentId": "preflight-match",
+  "request": {
+    "operation": "getMatch",
+    "parameters": {
+      "match_id_or_slug": "1772358"
+    },
+    "responseProjection": {
+      "id": "/id",
+      "status": "/status",
+      "winnerId": "/winner_id",
+      "endAt": "/end_at",
+      "modifiedAt": "/modified_at"
+    }
+  },
+  "requestHash": "0x4b6bc10a698da69deba7c1942aec697d76532a6835b8b430c1393578841761fe",
+  "amount": "10000",
+  "asset": "0xbeA34973e5f67F18F656A2C6070C64326C791808",
+  "payer": "0x6660e1d556d8fB44cB81D36F07272a01995f47A5",
+  "payTo": "0x1505FD562AC2Fb4307B85BC6c672FfeafB4d57A7",
+  "settlement": {
+    "success": true,
+    "transaction": "0xf7841761e8eab2641191b9a3f3aa19665db0e077d67c0120762c828d26bb55e7",
+    "network": "eip155:84532",
+    "payer": "0x6660e1d556d8fb44cb81d36f07272a01995f47a5"
+  },
+  "proof": {
+    "airnode": "0xd9D29FEDc3737aD5198611457fE04aB08a739C7b",
+    "requestHash": "0x4b6bc10a698da69deba7c1942aec697d76532a6835b8b430c1393578841761fe",
+    "timestamp": "1793414528",
+    "data": "{\"endAt\":\"2026-10-31T02:04:55Z\",\"id\":1772358,\"modifiedAt\":\"2026-10-31T02:26:16Z\",\"status\":\"finished\",\"winnerId\":139124}",
+    "signature": "0x878025fc0ae390ea7217771c1e850c14835aafecb67a281e8cd26c9b5f4d18b0343e9183daadafa7b18e31eabd2066eef9d54bdf3758c086db2c416d4d1b12881b"
+  },
+  "deliveredAt": "2026-10-31T02:42:09.260Z"
+}

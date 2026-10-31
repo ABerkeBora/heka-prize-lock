@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-10-31T02:49:14.874Z",
+  "pool": "0x1ecea4fec536541e494fbf48c3296b10ce7dc502",
+  "intentId": "prize-2-treasury-observation-1",
+  "duplicate": {
+    "decision": "blocked",
+    "cachedResult": "delivered",
+    "before": {
+      "apiSpent": "10000",
+      "callsUsed": 1,
+      "block": "52465423",
+      "nonce": 10
+    },
+    "after": {
+      "apiSpent": "10000",
+      "callsUsed": 1,
+      "block": "52465423",
+      "nonce": 10
+    }
+  },
+  "blocked": [
+    {
+      "case": "over-budget",
+      "decision": "rejected",
+      "reason": "Per-action API budget exceeded"
+    },
+    {
+      "case": "wrong-recipient",
+      "decision": "rejected",
+      "reason": "Unapproved asset, recipient or scheme"
+    }
+  ],
+  "limits": "API and gas limits are local executor controls; fixed recipients and one-shot prize are enforced on-chain."
+}

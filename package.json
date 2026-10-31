@@ -1,0 +1,38 @@
+{
+  "name": "prize-lock",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env server/index.ts",
+    "start": "node --env-file-if-exists=.env server/index.ts",
+    "build": "vite build --config web/vite.config.ts",
+    "test": "node --test server/*.test.ts",
+    "test:contracts": "forge test",
+    "preflight": "node --env-file-if-exists=.env scripts/preflight.ts",
+    "setup": "node --env-file-if-exists=.env scripts/setup.ts",
+    "agent": "node --env-file-if-exists=.env scripts/run-agent.ts",
+    "tamper": "node --env-file-if-exists=.env scripts/tamper.ts",
+    "submit-proof": "node --env-file-if-exists=.env scripts/submit-proof.ts"
+  },
+  "dependencies": {
+    "@x402/evm": "2.29.0",
+    "@x402/fetch": "2.29.0",
+    "express": "5.1.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "viem": "2.57.3"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.5",
+    "@types/node": "24.19.1",
+    "@types/react": "19.2.0",
+    "@types/react-dom": "19.2.0",
+    "@vitejs/plugin-react": "5.1.1",
+    "typescript": "6.0.3",
+    "vite": "7.3.7"
+  }
+}

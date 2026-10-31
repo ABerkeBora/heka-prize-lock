@@ -1,0 +1,35 @@
+{
+  "intentId": "prize-1-treasury-observation-1",
+  "request": {
+    "operation": "getMatch",
+    "parameters": {
+      "match_id_or_slug": "1772358"
+    },
+    "responseProjection": {
+      "id": "/id",
+      "status": "/status",
+      "winnerId": "/winner_id",
+      "endAt": "/end_at",
+      "modifiedAt": "/modified_at"
+    }
+  },
+  "requestHash": "0x4b6bc10a698da69deba7c1942aec697d76532a6835b8b430c1393578841761fe",
+  "amount": "10000",
+  "asset": "0xbeA34973e5f67F18F656A2C6070C64326C791808",
+  "payer": "0x6660e1d556d8fB44cB81D36F07272a01995f47A5",
+  "payTo": "0x1505FD562AC2Fb4307B85BC6c672FfeafB4d57A7",
+  "settlement": {
+    "success": true,
+    "transaction": "0xda6c942ebf5f53de9a1831fd4b9ddbe6630856231a32fead61a3e5a9f33cc5e7",
+    "network": "eip155:84532",
+    "payer": "0x6660e1d556d8fb44cb81d36f07272a01995f47a5"
+  },
+  "proof": {
+    "airnode": "0xd9D29FEDc3737aD5198611457fE04aB08a739C7b",
+    "requestHash": "0x4b6bc10a698da69deba7c1942aec697d76532a6835b8b430c1393578841761fe",
+    "timestamp": "1793414626",
+    "data": "{\"endAt\":\"2026-10-31T02:04:55Z\",\"id\":1772358,\"modifiedAt\":\"2026-10-31T02:26:16Z\",\"status\":\"finished\",\"winnerId\":139124}",
+    "signature": "0xd69dacf531aed732506f4ce0afeece97494914acee1288b30eb50642f38a742743ac87a263b739ed4d4ac40acc9c29efd85ea049981b751219be9c898aad2d611b"
+  },
+  "deliveredAt": "2026-10-31T02:43:46.884Z"
+}
