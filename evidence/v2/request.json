@@ -1,0 +1,16 @@
+{
+  "operation": "getMatch",
+  "parameters": {
+    "match_id_or_slug": "1713127"
+  },
+  "responseProjection": {
+    "id": "/id",
+    "status": "/status",
+    "winnerId": "/winner_id",
+    "endAt": "/end_at",
+    "modifiedAt": "/modified_at",
+    "scheduledAt": "/scheduled_at",
+    "teamAId": "/opponents/0/opponent/id",
+    "teamBId": "/opponents/1/opponent/id"
+  }
+}

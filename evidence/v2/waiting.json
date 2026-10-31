@@ -1,0 +1,109 @@
+{
+  "checkedAt": "2026-10-31T03:33:52.473Z",
+  "pool": {
+    "id": "future-prize-1",
+    "status": "waiting",
+    "policy": {
+      "airnode": "0xd9D29FEDc3737aD5198611457fE04aB08a739C7b",
+      "requestHash": "0x0bf52ab2e1687b20e14a9063033f8bf531daa8b74c176a5730bf6355004514db",
+      "matchId": 1713127,
+      "teamA": 138767,
+      "teamB": 13719,
+      "walletA": "0xC1E539D87B5f5e30D251a1433C717b78dBDd9a7d",
+      "walletB": "0xb669D2Eb093f22390A9d0F07eE99686c11F66129",
+      "organizer": "0x7402c63F034Fb9179B72908FD0A09b289786B4F6",
+      "prizeWei": "100000000000000",
+      "fundingClosesAt": 1793421190,
+      "scheduledAt": 1793426400,
+      "endWindowStart": 1793424600,
+      "endWindowEnd": 1793448000,
+      "settlementDeadline": 1793455200,
+      "refundGrace": 600,
+      "maxEnvelopeAge": 180,
+      "finalityDelay": 120,
+      "maxInitialSourceAge": 604800,
+      "maxFinalSourceAge": 3600
+    },
+    "request": {
+      "operation": "getMatch",
+      "parameters": {
+        "match_id_or_slug": "1713127"
+      },
+      "responseProjection": {
+        "id": "/id",
+        "status": "/status",
+        "winnerId": "/winner_id",
+        "endAt": "/end_at",
+        "modifiedAt": "/modified_at",
+        "scheduledAt": "/scheduled_at",
+        "teamAId": "/opponents/0/opponent/id",
+        "teamBId": "/opponents/1/opponent/id"
+      }
+    },
+    "createdAt": "2026-10-31T03:33:10.118Z",
+    "initialObservation": {
+      "airnode": "0xd9D29FEDc3737aD5198611457fE04aB08a739C7b",
+      "requestHash": "0x0bf52ab2e1687b20e14a9063033f8bf531daa8b74c176a5730bf6355004514db",
+      "timestamp": "1793417525",
+      "data": "{\"endAt\":null,\"id\":1713127,\"modifiedAt\":\"2026-10-30T17:04:45Z\",\"scheduledAt\":\"2026-10-31T06:00:00Z\",\"status\":\"not_started\",\"teamAId\":138767,\"teamBId\":13719,\"winnerId\":null}",
+      "signature": "0xc5fd78aa92c99bbe8f4e0577e24a4d4855ee77b9c5c1cb1d1ce822650d8b0e190da651adf11c109fbc915182be539d8b38feafd65d450d57b00a66418e9ec7481b"
+    },
+    "address": "0x1f4f2052dcb0fb93b560331bc9e1892b057b6d84",
+    "deploymentTx": "0xb6c8b63942ce85eb526d4a48547124ad687d592a15c309d2dea4f5a8a216c574",
+    "fundingTx": "0x6d01987ae940591778f62ab2b9c589555ac0d6879e01f735dafa426182e6f63c"
+  },
+  "mandate": {
+    "id": "future-prize-1-monitor",
+    "network": "eip155:84532",
+    "asset": "0xbeA34973e5f67F18F656A2C6070C64326C791808",
+    "allowedTool": "getMatch",
+    "requestHash": "0x0bf52ab2e1687b20e14a9063033f8bf531daa8b74c176a5730bf6355004514db",
+    "endpoint": "https://airnode-pandascore.fly.dev/",
+    "contract": "0x1f4f2052dcb0fb93b560331bc9e1892b057b6d84",
+    "payer": "0x7402c63F034Fb9179B72908FD0A09b289786B4F6",
+    "payTo": "0x1505FD562AC2Fb4307B85BC6c672FfeafB4d57A7",
+    "beneficiaries": [
+      "0xC1E539D87B5f5e30D251a1433C717b78dBDd9a7d",
+      "0xb669D2Eb093f22390A9d0F07eE99686c11F66129"
+    ],
+    "refundBeneficiary": "0x7402c63F034Fb9179B72908FD0A09b289786B4F6",
+    "allowRefund": true,
+    "expiresAt": 1793459400,
+    "maxCalls": 3,
+    "callsUsed": 1,
+    "maxActions": 4,
+    "payoutActions": 0,
+    "maxApiFee": "10000",
+    "totalApiBudget": "30000",
+    "apiReserved": "10000",
+    "apiSpent": "10000",
+    "gasBudgetWei": "300000000000000",
+    "maxActionGasWei": "150000000000000",
+    "gasReservedWei": "0",
+    "gasSpentWei": "0",
+    "pollIntervalSeconds": 900,
+    "nextPollAt": 1793431800,
+    "status": "waiting",
+    "createdAt": "2026-10-31T03:33:50.160Z",
+    "currentIntent": null,
+    "lastObservedAt": "2026-10-31T03:33:52.286Z",
+    "lastError": null
+  },
+  "proof": {
+    "airnode": "0xd9D29FEDc3737aD5198611457fE04aB08a739C7b",
+    "requestHash": "0x0bf52ab2e1687b20e14a9063033f8bf531daa8b74c176a5730bf6355004514db",
+    "timestamp": "1793417631",
+    "data": "{\"endAt\":null,\"id\":1713127,\"modifiedAt\":\"2026-10-30T17:04:45Z\",\"scheduledAt\":\"2026-10-31T06:00:00Z\",\"status\":\"not_started\",\"teamAId\":138767,\"teamBId\":13719,\"winnerId\":null}",
+    "signature": "0xcbcd9cc2786fdbd902dc08f0f7f99acb5232b5e074999fbd6d48a913ab258208071fa45cff9d8e19b436d2c921a96196623cb9da4776fa89c112f2f49b590b151b"
+  },
+  "chain": {
+    "state": 1,
+    "winningTeam": "0",
+    "paidTo": "0x0000000000000000000000000000000000000000",
+    "acceptedProofHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "balanceWei": "100000000000000"
+  },
+  "decision": "NO_PAYOUT",
+  "reason": "Real signed result is not final; prize remains protected",
+  "liveTerminal": "PENDING"
+}

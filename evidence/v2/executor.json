@@ -1,0 +1,8 @@
+{
+  "network": 84532,
+  "executor": "0x7402c63F034Fb9179B72908FD0A09b289786B4F6",
+  "beneficiaryA": "0xC1E539D87B5f5e30D251a1433C717b78dBDd9a7d",
+  "beneficiaryB": "0xb669D2Eb093f22390A9d0F07eE99686c11F66129",
+  "source": "0x6660e1d556d8fB44cB81D36F07272a01995f47A5",
+  "note": "Separate V2 nonce and storage. Test beneficiaries do not represent teams."
+}

@@ -3,6 +3,10 @@ import { getState } from './state.ts';
 import { startAgent,runAgent,newPool,fundPool,refundPool } from './agent.ts';
 import { checkProof } from './proofs.ts';
 import { exclusive,readJson,saveJson,appendTrail } from './store.ts';
+import {withScope,v2Scope} from './scope.ts';
+import {getFutureState} from './future-state.ts';
+import {createFuturePool,fundFuturePool,startFutureAgent,runFutureAgent,refundFuturePool} from './future-agent.ts';
+import {tickFuture} from './future-keeper.ts';
 const app=express();app.disable('x-powered-by');
 app.use((req,res,next)=>{res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('Referrer-Policy','no-referrer');res.setHeader('Content-Security-Policy',"default-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; frame-ancestors 'none'");
  if(req.method==='POST'){
@@ -13,7 +17,12 @@ app.use(express.json({limit:'128kb'}));
 app.get('/api/state',async(_req,res)=>{try{res.json(await getState());}catch(e:any){res.status(503).json({error:e.shortMessage||e.message});}});
 for(const [path,handler] of Object.entries({'/api/agent/start':startAgent,'/api/agent/run':runAgent,'/api/pool/new':newPool,'/api/pool/fund':fundPool,'/api/refund':refundPool}))app.post(path,async(_req,res)=>{try{res.json(await exclusive(handler));}catch(e:any){res.status(409).json({error:e.shortMessage||e.message});}});
 app.post('/api/proof/check',async(req,res)=>{try{res.json(await exclusive(()=>checkProof(req.body.case,req.body.proof)));}catch(e:any){res.status(400).json({error:e.shortMessage||e.message});}});
+app.get('/api/next/state',async(_req,res)=>{try{res.json(await withScope(v2Scope,getFutureState));}catch(e:any){res.status(503).json({error:e.shortMessage||e.message});}});
+for(const [path,handler] of Object.entries({'/api/next/agent/start':startFutureAgent,'/api/next/agent/run':runFutureAgent,'/api/next/pool/new':createFuturePool,'/api/next/pool/fund':fundFuturePool,'/api/next/refund':()=>refundFuturePool(false)}))app.post(path,async(_req,res)=>{try{res.json(await withScope(v2Scope,()=>exclusive(handler)));}catch(e:any){res.status(409).json({error:e.shortMessage||e.message});}});
+app.post('/api/next/proof/check',async(req,res)=>{try{res.json(await withScope(v2Scope,()=>exclusive(()=>checkProof(req.body.case,req.body.proof))));}catch(e:any){res.status(400).json({error:e.shortMessage||e.message});}});
 app.use('/evidence',express.static('evidence',{dotfiles:'deny'}));app.use(express.static('web/dist'));
+app.get('/next',(_req,res)=>res.sendFile('index.html',{root:'web/dist'}));
+setInterval(()=>void tickFuture(),5000).unref();
 // A bounded local keeper resumes only this mandate. Attention/error states require review; no top-ups.
 let ticking=false;
 setInterval(async()=>{if(ticking)return;const current=readJson('.local/mandate.json');if(!current||!['active','awaiting-result','buying-data','paying'].includes(current.status))return;

@@ -1,0 +1,77 @@
+{
+  "note": "Initial edited test did not mutate a null winner; it was a genuine nonfinal rejection, not edited-signature evidence. Corrected proof test follows. Wrong-request first submission was intrinsically invalid and never broadcast; original signed intent remains stored.",
+  "attempts": [
+    {
+      "case": "edited",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "ResultNotFinal",
+      "checkedAt": "2026-10-31T03:35:41.224Z",
+      "method": "confirmed transaction",
+      "contract": "0x1f4f2052dcb0fb93b560331bc9e1892b057b6d84",
+      "proofHash": "0x11734168c93259bba0915575b2dd0b5674d46ebe4c541e4182a962736ceb3da1",
+      "before": {
+        "state": 1,
+        "winningTeam": "0",
+        "paidTo": "0x0000000000000000000000000000000000000000",
+        "acceptedProofHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "balanceWei": "100000000000000"
+      },
+      "txHash": "0x79f346b24f09550fe917b5dbc0d0612c08959e878ee4aa2dd1451adfc20d2d70",
+      "receipt": {
+        "transactionHash": "0x79f346b24f09550fe917b5dbc0d0612c08959e878ee4aa2dd1451adfc20d2d70",
+        "blockNumber": "52479368",
+        "status": "reverted",
+        "contractAddress": null,
+        "gasUsed": "209172",
+        "effectiveGasPrice": "6000000",
+        "l1FeeWei": "1511",
+        "gasCostWei": "1255032001511"
+      },
+      "after": {
+        "state": 1,
+        "winningTeam": "0",
+        "paidTo": "0x0000000000000000000000000000000000000000",
+        "acceptedProofHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "balanceWei": "100000000000000"
+      },
+      "prizeUnchanged": true
+    },
+    {
+      "case": "stale",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "ResponseTooOld",
+      "checkedAt": "2026-10-31T03:35:43.214Z",
+      "method": "confirmed transaction",
+      "contract": "0x1f4f2052dcb0fb93b560331bc9e1892b057b6d84",
+      "proofHash": "0x11734168c93259bba0915575b2dd0b5674d46ebe4c541e4182a962736ceb3da1",
+      "before": {
+        "state": 1,
+        "winningTeam": "0",
+        "paidTo": "0x0000000000000000000000000000000000000000",
+        "acceptedProofHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "balanceWei": "100000000000000"
+      },
+      "txHash": "0xeb69eaf358476574270cb385fd5cb0a7f490f3c1d59ab97bb0cd4069f12ee241",
+      "receipt": {
+        "transactionHash": "0xeb69eaf358476574270cb385fd5cb0a7f490f3c1d59ab97bb0cd4069f12ee241",
+        "blockNumber": "52479378",
+        "status": "reverted",
+        "contractAddress": null,
+        "gasUsed": "33020",
+        "effectiveGasPrice": "6000000",
+        "l1FeeWei": "1331",
+        "gasCostWei": "198120001331"
+      },
+      "after": {
+        "state": 1,
+        "winningTeam": "0",
+        "paidTo": "0x0000000000000000000000000000000000000000",
+        "acceptedProofHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "balanceWei": "100000000000000"
+      },
+      "prizeUnchanged": true
+    }
+  ]
+}

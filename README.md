@@ -6,6 +6,20 @@ Prize Lock pre-funds an esports prize, buys an authenticated match result, and l
 
 This is a locally runnable Base Sepolia application for the API3 **Any API in your contract** track. The included scenario uses an already-finished PandaScore match, **Team Synapse vs New Growth, match 1772358, 2–0**. Recipient addresses are isolated test wallets; they do not represent or belong to these teams. No real-value prize or live-event outcome is claimed.
 
+## V2: fund before the result
+
+Use branch [`codex/next`](https://github.com/ABerkeBora/heka-prize-lock/tree/codex/next) to compare [V1 settled match](http://localhost:3105/) with [V2 upcoming match](http://localhost:3105/next). V1 is preserved at tag `v1-baseline`, including its complete transaction history. The same app identity and setup commands serve both routes.
+
+V2's real PandaScore match 1713127, ZANSIDE GAMING vs O2 Blast, is scheduled for 31 October 2026 at 07:00 Europe/Berlin. An authenticated `not_started` response with null winner/end time was required by the new contract **before** funding. [FuturePrizeLock](https://sepolia.basescan.org/address/0x1f4f2052dcb0fb93b560331bc9e1892b057b6d84) now holds 0.0001 test ETH. The bounded agent bought another real observation and correctly stayed Waiting. **No V2 live final payout/refund is claimed.**
+
+`/api/next`, `.local/v2/` and `evidence/v2/` are isolated using request-local async context; V2's executor has a separate key/nonce. The paid-request and transaction reconciliation guards are shared. V1's historical creation remains unchanged; V2 never derives policy from a missing end time. Team set, schedule, beneficiaries, source/end windows, deadline and grace are fixed before funding. Source updates and envelope timestamps are separate checks; source mistakes and later corrections remain oracle risks.
+
+The delivered local pilot was initialized with test-only source-wallet access using `npm run v2:prepare`, `npm run v2:discover`, `npm run v2:setup`, `npm run v2:agent`. Discovery stops after 5 minutes/3 paid calls. Existing pilot records are never overwritten. A fresh public clone is read-only for this shipped pilot; preparation/discovery/deployment refuse to replace its archived executor or receipts. Preserve the original ignored local state for resuming economic actions. `npm run v2:agent -- --resume` honors the next scheduled observation; `npm run v2:tamper -- --live` reuses confirmed rejection records. Preparation seeds only 0.001 test ETH and 0.1 test aUSD into the separate executor; no automatic top-ups.
+
+Monitoring: 3 calls maximum, 10000 aUSD base units/call, 30000 total; one payout or fixed refund; terminal gas reserve 300000000000000 wei, per-action 150000000000000 wei. The mandate has a fixed 16:10 Berlin expiry, next check 08:30 Berlin and a minimum 900s cadence; further nonfinal check waits 1800s. Missing/invalid/canceled/rescheduled results never change policy or release the prize. Budget exhaustion stops purchases. Refund is fixed for 15:10 Berlin if unresolved. These caps are local executor controls; contract proof, beneficiary and one-terminal-transfer rules are enforced on-chain.
+
+33 executor tests and 61 contract tests include both versions. `evidence/v2/chain-verification.json` confirms initial unknown-result funding, historical real fresh nonfinal rejection and unchanged reserve; `live-tamper-checks.json` contains four new reverted transactions. Final payout/refund tests use explicit synthetic signatures and do not substitute for a live result. See [V2 handoff](MORNING_HANDOFF_V2.md), [V2 requirements](TRACK_REQUIREMENTS_V2.md), and [contract policy](CONTRACT_V2.md). Video/submission remain pending.
+
 ## Open the recorded result
 
 Requires Node.js **22.18+** and npm. Foundry is needed for contract builds and tests.

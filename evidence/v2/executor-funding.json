@@ -1,0 +1,7 @@
+{
+  "executor": "0x7402c63F034Fb9179B72908FD0A09b289786B4F6",
+  "testEthWei": "1000000000000000",
+  "aUSDBaseUnits": "100000",
+  "ethTransaction": "0xea88d0f4352a85ce49da9c508699920f3ca6b70ae49720da67c20066dcfbb1fa",
+  "aUSDTransaction": "0x3aba512ac19b94106d5b2efa13bef00b488a8d605066c4962e54be60627020a1"
+}

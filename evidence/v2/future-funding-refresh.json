@@ -1,0 +1,39 @@
+{
+  "intentId": "future-funding-refresh",
+  "request": {
+    "operation": "getMatch",
+    "parameters": {
+      "match_id_or_slug": "1713127"
+    },
+    "responseProjection": {
+      "id": "/id",
+      "status": "/status",
+      "winnerId": "/winner_id",
+      "endAt": "/end_at",
+      "modifiedAt": "/modified_at",
+      "scheduledAt": "/scheduled_at",
+      "teamAId": "/opponents/0/opponent/id",
+      "teamBId": "/opponents/1/opponent/id"
+    }
+  },
+  "requestHash": "0x0bf52ab2e1687b20e14a9063033f8bf531daa8b74c176a5730bf6355004514db",
+  "amount": "10000",
+  "asset": "0xbeA34973e5f67F18F656A2C6070C64326C791808",
+  "payer": "0x7402c63F034Fb9179B72908FD0A09b289786B4F6",
+  "payTo": "0x1505FD562AC2Fb4307B85BC6c672FfeafB4d57A7",
+  "settlement": {
+    "success": true,
+    "transaction": "0x45c93fde00ff2985b055c5d1507a51a4effff656a41bad6584ffb6c1c1c608a7",
+    "network": "eip155:84532",
+    "payer": "0x7402c63f034fb9179b72908fd0a09b289786b4f6"
+  },
+  "proof": {
+    "airnode": "0xd9D29FEDc3737aD5198611457fE04aB08a739C7b",
+    "requestHash": "0x0bf52ab2e1687b20e14a9063033f8bf531daa8b74c176a5730bf6355004514db",
+    "timestamp": "1793417593",
+    "data": "{\"endAt\":null,\"id\":1713127,\"modifiedAt\":\"2026-10-30T17:04:45Z\",\"scheduledAt\":\"2026-10-31T06:00:00Z\",\"status\":\"not_started\",\"teamAId\":138767,\"teamBId\":13719,\"winnerId\":null}",
+    "signature": "0x933b4cfeb3d78298cd9a46bf2493307b904fbdba7d503c5232e01d61322d953635bae2d6acc2494c7c7c7595a65d5046ea4bdbb3e5ee3284b01aa1b188f47bfb1b"
+  },
+  "deliveredAt": "2026-10-31T03:33:14.206Z",
+  "receiptVerified": true
+}

@@ -6,7 +6,9 @@ const address = process.argv[2];
 if (!/^0x[0-9a-fA-F]{40}$/.test(address ?? '')) {
   throw new Error('Usage: node contracts/compare-runtime.mjs <deployed address>');
 }
-const artifact = JSON.parse(readFileSync(new URL('../out/PrizeLock.sol/PrizeLock.json', import.meta.url), 'utf8'));
+const contractName=process.argv[3]||'PrizeLock';
+if(!['PrizeLock','FuturePrizeLock'].includes(contractName))throw new Error('Unsupported contract artifact');
+const artifact = JSON.parse(readFileSync(new URL(`../out/${contractName}.sol/${contractName}.json`, import.meta.url), 'utf8'));
 const response = await fetch(process.env.PRIZE_LOCK_RPC_URL ?? 'https://sepolia.base.org', {
   method: 'POST',
   headers: { 'content-type': 'application/json' },

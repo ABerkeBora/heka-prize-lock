@@ -2,6 +2,7 @@ import { readFileSync, statSync } from 'node:fs';
 import { privateKeyToAccount } from 'viem/accounts';
 import { createPublicClient, createWalletClient, http, type Hex } from 'viem';
 import { baseSepolia } from 'viem/chains';
+import {scope} from './scope.ts';
 export const AIRNODE_URL = 'https://airnode-pandascore.fly.dev/';
 export const AIRNODE = '0xd9D29FEDc3737aD5198611457fE04aB08a739C7b';
 export const AUSD = '0xbeA34973e5f67F18F656A2C6070C64326C791808';
@@ -10,7 +11,7 @@ export const NETWORK = 'eip155:84532';
 export const rpc = process.env.RPC_URL || 'https://sepolia.base.org';
 export const publicClient = createPublicClient({chain:baseSepolia,transport:http(rpc,{timeout:20_000,retryCount:1})});
 export function wallets() {
-  const path=process.env.WALLET_FILE || '.local/test-wallets.json';
+  const path=scope()?.walletFile || process.env.WALLET_FILE || '.local/test-wallets.json';
   if ((statSync(path).mode & 0o077)!==0) throw new Error('Wallet file permissions must be 0600');
   const w=JSON.parse(readFileSync(path,'utf8'));
   if(w.testOnly!==true || w.chainId!==84532) throw new Error('Only isolated Base Sepolia test wallets are allowed');

@@ -16,7 +16,12 @@
     "setup": "node --env-file-if-exists=.env scripts/setup.ts",
     "agent": "node --env-file-if-exists=.env scripts/run-agent.ts",
     "tamper": "node --env-file-if-exists=.env scripts/tamper.ts",
-    "submit-proof": "node --env-file-if-exists=.env scripts/submit-proof.ts"
+    "submit-proof": "node --env-file-if-exists=.env scripts/submit-proof.ts",
+    "v2:prepare": "node --env-file-if-exists=.env scripts/v2-prepare.ts",
+    "v2:discover": "node --env-file-if-exists=.env scripts/v2-discover.ts",
+    "v2:setup": "node --env-file-if-exists=.env scripts/v2-setup.ts",
+    "v2:agent": "node --env-file-if-exists=.env scripts/v2-agent.ts",
+    "v2:tamper": "node --env-file-if-exists=.env scripts/v2-tamper.ts"
   },
   "dependencies": {
     "@x402/evm": "2.29.0",

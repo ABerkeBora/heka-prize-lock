@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-31T03:40:41.949Z",
+  "route": "CUA real browser; production build",
+  "v2": "/next funded/waiting, real not_started/null result, edited proof rejected via UI",
+  "v1": "/ displays same paid contract and payout after link navigation",
+  "desktop": {
+    "scrollWidth": 1440,
+    "width": 1440
+  },
+  "tablet": {
+    "scrollWidth": 768,
+    "width": 768
+  },
+  "phone": {
+    "scrollWidth": 390,
+    "width": 390
+  },
+  "standaloneInspector": "Replaced with supported CUA screenshots and overflow checks",
+  "liveTerminal": "PENDING"
+}

@@ -1,0 +1,265 @@
+{
+  "modified_at": "2026-10-30T17:04:45Z",
+  "opponents": [
+    {
+      "type": "Team",
+      "opponent": {
+        "id": 138767,
+        "name": "ZANSIDE GAMING",
+        "location": "KR",
+        "slug": "zanside-gaming",
+        "modified_at": "2026-10-25T11:42:26Z",
+        "acronym": "ZSG",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/138767/800px_zanside_gaming_lightmode.png",
+        "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/138767/800px_zanside_gaming_darkmode.png"
+      }
+    },
+    {
+      "type": "Team",
+      "opponent": {
+        "id": 13719,
+        "name": "O2 Blast",
+        "location": "KR",
+        "slug": "o2-team",
+        "modified_at": "2026-10-25T11:42:22Z",
+        "acronym": "O2B",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/13719/o2_blast_2026_full_lightmode.png",
+        "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/13719/o2_blast_2026_full_darkmode.png"
+      }
+    }
+  ],
+  "tournament": {
+    "id": 22075,
+    "name": "Last Chance Qualifier",
+    "type": "online",
+    "country": "KR",
+    "begin_at": "2026-10-29T15:00:00Z",
+    "detailed_stats": false,
+    "end_at": "2026-11-01T11:00:00Z",
+    "winner_id": null,
+    "slug": "ow-overwatch-champions-series-korea-stage-3-2026-last-chance-qualifier",
+    "winner_type": "Team",
+    "region": "ASIA",
+    "serie_id": 11022,
+    "modified_at": "2026-10-26T07:24:56Z",
+    "league_id": 5223,
+    "has_bracket": true,
+    "prizepool": null,
+    "tier": "c",
+    "live_supported": false
+  },
+  "match_type": "first_to",
+  "league_id": 5223,
+  "videogame": {
+    "id": 14,
+    "name": "Overwatch",
+    "slug": "ow"
+  },
+  "games": [
+    {
+      "complete": false,
+      "id": 31298,
+      "position": 1,
+      "status": "not_started",
+      "length": null,
+      "finished": false,
+      "match_id": 1713127,
+      "begin_at": null,
+      "detailed_stats": false,
+      "end_at": null,
+      "forfeit": false,
+      "winner_type": "Team",
+      "winner": {
+        "id": null,
+        "type": "Team"
+      }
+    },
+    {
+      "complete": false,
+      "id": 31299,
+      "position": 2,
+      "status": "not_started",
+      "length": null,
+      "finished": false,
+      "match_id": 1713127,
+      "begin_at": null,
+      "detailed_stats": false,
+      "end_at": null,
+      "forfeit": false,
+      "winner_type": "Team",
+      "winner": {
+        "id": null,
+        "type": "Team"
+      }
+    },
+    {
+      "complete": false,
+      "id": 31300,
+      "position": 3,
+      "status": "not_started",
+      "length": null,
+      "finished": false,
+      "match_id": 1713127,
+      "begin_at": null,
+      "detailed_stats": false,
+      "end_at": null,
+      "forfeit": false,
+      "winner_type": "Team",
+      "winner": {
+        "id": null,
+        "type": "Team"
+      }
+    },
+    {
+      "complete": false,
+      "id": 31301,
+      "position": 4,
+      "status": "not_started",
+      "length": null,
+      "finished": false,
+      "match_id": 1713127,
+      "begin_at": null,
+      "detailed_stats": false,
+      "end_at": null,
+      "forfeit": false,
+      "winner_type": "Team",
+      "winner": {
+        "id": null,
+        "type": "Team"
+      }
+    },
+    {
+      "complete": false,
+      "id": 31302,
+      "position": 5,
+      "status": "not_started",
+      "length": null,
+      "finished": false,
+      "match_id": 1713127,
+      "begin_at": null,
+      "detailed_stats": false,
+      "end_at": null,
+      "forfeit": false,
+      "winner_type": "Team",
+      "winner": {
+        "id": null,
+        "type": "Team"
+      }
+    },
+    {
+      "complete": false,
+      "id": 31303,
+      "position": 6,
+      "status": "not_started",
+      "length": null,
+      "finished": false,
+      "match_id": 1713127,
+      "begin_at": null,
+      "detailed_stats": false,
+      "end_at": null,
+      "forfeit": false,
+      "winner_type": "Team",
+      "winner": {
+        "id": null,
+        "type": "Team"
+      }
+    },
+    {
+      "complete": false,
+      "id": 31304,
+      "position": 7,
+      "status": "not_started",
+      "length": null,
+      "finished": false,
+      "match_id": 1713127,
+      "begin_at": null,
+      "detailed_stats": false,
+      "end_at": null,
+      "forfeit": false,
+      "winner_type": "Team",
+      "winner": {
+        "id": null,
+        "type": "Team"
+      }
+    }
+  ],
+  "rescheduled": true,
+  "tournament_id": 22075,
+  "scheduled_at": "2026-10-31T06:00:00Z",
+  "status": "not_started",
+  "begin_at": "2026-10-31T06:00:00Z",
+  "league": {
+    "id": 5223,
+    "name": "OCS",
+    "url": null,
+    "slug": "ow-overwatch-champions-series",
+    "modified_at": "2024-03-11T12:36:42Z",
+    "image_url": null
+  },
+  "original_scheduled_at": "2026-10-30T15:00:00Z",
+  "winner_id": null,
+  "winner": null,
+  "slug": "2026-10-30-074a9119-050e-430d-ac94-598baaf49e25",
+  "videogame_version": null,
+  "live": {
+    "supported": false,
+    "url": null,
+    "opens_at": null
+  },
+  "serie_id": 11022,
+  "number_of_games": 3,
+  "id": 1713127,
+  "name": "Lower Bracket Semifinal: ZSG vs O2B",
+  "detailed_stats": false,
+  "serie": {
+    "id": 11022,
+    "name": "Korea Stage 3",
+    "year": 2026,
+    "begin_at": "2026-10-02T08:00:00Z",
+    "end_at": "2026-11-07T23:00:00Z",
+    "winner_id": null,
+    "slug": "ow-overwatch-champions-series-korea-stage-3-2026",
+    "winner_type": "Team",
+    "modified_at": "2026-09-26T10:13:40Z",
+    "league_id": 5223,
+    "season": null,
+    "full_name": "Korea Stage 3 2026"
+  },
+  "streams_list": [
+    {
+      "main": false,
+      "language": "ja",
+      "embed_url": null,
+      "official": false,
+      "raw_url": "https://www.youtube.com/@ow_esports_jp/live"
+    },
+    {
+      "main": true,
+      "language": "ja",
+      "embed_url": "https://player.twitch.tv/?channel=ow_esports_jp",
+      "official": true,
+      "raw_url": "https://www.twitch.tv/ow_esports_jp"
+    }
+  ],
+  "end_at": null,
+  "winner_type": "Team",
+  "forfeit": false,
+  "game_advantage": null,
+  "videogame_title": {
+    "id": 9,
+    "name": "Overwatch2",
+    "slug": "ow-2",
+    "videogame_id": 14
+  },
+  "results": [
+    {
+      "team_id": 138767,
+      "score": 0
+    },
+    {
+      "team_id": 13719,
+      "score": 0
+    }
+  ],
+  "draw": false
+}

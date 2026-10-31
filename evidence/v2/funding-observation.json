@@ -1,0 +1,7 @@
+{
+  "airnode": "0xd9D29FEDc3737aD5198611457fE04aB08a739C7b",
+  "requestHash": "0x0bf52ab2e1687b20e14a9063033f8bf531daa8b74c176a5730bf6355004514db",
+  "timestamp": "1793417525",
+  "data": "{\"endAt\":null,\"id\":1713127,\"modifiedAt\":\"2026-10-30T17:04:45Z\",\"scheduledAt\":\"2026-10-31T06:00:00Z\",\"status\":\"not_started\",\"teamAId\":138767,\"teamBId\":13719,\"winnerId\":null}",
+  "signature": "0xc5fd78aa92c99bbe8f4e0577e24a4d4855ee77b9c5c1cb1d1ce822650d8b0e190da651adf11c109fbc915182be539d8b38feafd65d450d57b00a66418e9ec7481b"
+}

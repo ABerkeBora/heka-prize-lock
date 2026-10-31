@@ -1,0 +1,16 @@
+import {withScope,v2Scope} from '../server/scope.ts';
+import {readJson,saveJson} from '../server/store.ts';
+import {publicClient} from '../server/config.ts';
+import {abi,readPool} from '../server/chain.ts';
+import {toHex} from 'viem';
+await withScope(v2Scope,async()=>{
+ const pool=readJson('evidence/deployment.json');const actual:any={};for(const [name,value] of Object.entries(pool.policy)){if(name==='refundGrace')continue;const result=await publicClient.readContract({address:pool.address,abi:abi(),functionName:name});actual[name]=String(result);if(String(result).toLowerCase()!==String(value).toLowerCase())throw new Error('Immutable mismatch: '+name);}
+ const funding=readJson('evidence/funding.json');const fundBlock=await publicClient.getBlock({blockNumber:BigInt(funding.receipt.blockNumber)});if(fundBlock.timestamp>=BigInt(pool.policy.scheduledAt))throw new Error('Funding did not precede scheduled start');
+ const initial=JSON.parse(funding.proof.data);if(initial.status!=='not_started'||initial.winnerId!==null||initial.endAt!==null)throw new Error('Funding result was known');
+ const intent=readJson('.local/intents/future-prize-1-monitor-observation-1.json');const receipt=await publicClient.getTransactionReceipt({hash:intent.settlement.transaction});const blockNumber=receipt.blockNumber+5n;const block=await publicClient.getBlock({blockNumber});
+ if(block.timestamp<BigInt(intent.proof.timestamp)||block.timestamp-BigInt(intent.proof.timestamp)>180n)throw new Error('Historical pending check is outside the real envelope window');
+ let reason='';try{await publicClient.readContract({address:pool.address,abi:abi(),functionName:'validateResponse',args:[BigInt(intent.proof.timestamp),toHex(intent.proof.data),intent.proof.signature],blockNumber});throw new Error('Unexpected nonfinal acceptance');}catch(e:any){reason=e.cause?.data?.errorName||e.data?.errorName||e.shortMessage||e.message;if(reason!=='ResultNotFinal')throw e;}
+ const before=(await publicClient.getBalance({address:pool.address,blockNumber})).toString();const current=await readPool(pool);if(current.state!==1||current.balanceWei!==pool.policy.prizeWei||before!==pool.policy.prizeWei)throw new Error('Protected prize changed');
+ const failures=[];for(const t of readJson('evidence/live-tamper-checks.json',[])){const r=await publicClient.getTransactionReceipt({hash:t.txHash});if(r.status!=='reverted'||!t.prizeUnchanged)throw new Error('Invalid tamper record');failures.push({case:t.case,reason:t.reason,txHash:t.txHash,status:r.status});}
+ saveJson('evidence/chain-verification.json',{checkedAt:new Date().toISOString(),address:pool.address,network:84532,immutablePolicy:actual,fundedBeforeSchedule:true,fundingBlockTimestamp:fundBlock.timestamp.toString(),unknownResultAtFunding:initial,nonfinal:{method:'eth_call at an actual historical Base Sepolia block; no clock warp',blockNumber:blockNumber.toString(),blockTimestamp:block.timestamp.toString(),signedAt:intent.proof.timestamp,rejection:reason,reserveThenWei:before,reserveNowWei:current.balanceWei},chain:current,tamper:failures,liveTerminal:'PENDING'});console.log('Real future funding, immutable policy, historical fresh nonfinal rejection, unchanged reserve and four real reverts verified.');
+});

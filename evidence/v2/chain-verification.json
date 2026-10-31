@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-10-31T03:38:38.211Z",
+  "address": "0x1f4f2052dcb0fb93b560331bc9e1892b057b6d84",
+  "network": 84532,
+  "immutablePolicy": {
+    "airnode": "0xd9D29FEDc3737aD5198611457fE04aB08a739C7b",
+    "requestHash": "0x0bf52ab2e1687b20e14a9063033f8bf531daa8b74c176a5730bf6355004514db",
+    "matchId": "1713127",
+    "teamA": "138767",
+    "teamB": "13719",
+    "walletA": "0xC1E539D87B5f5e30D251a1433C717b78dBDd9a7d",
+    "walletB": "0xb669D2Eb093f22390A9d0F07eE99686c11F66129",
+    "organizer": "0x7402c63F034Fb9179B72908FD0A09b289786B4F6",
+    "prizeWei": "100000000000000",
+    "fundingClosesAt": "1793421190",
+    "scheduledAt": "1793426400",
+    "endWindowStart": "1793424600",
+    "endWindowEnd": "1793448000",
+    "settlementDeadline": "1793455200",
+    "maxEnvelopeAge": "180",
+    "finalityDelay": "120",
+    "maxInitialSourceAge": "604800",
+    "maxFinalSourceAge": "3600"
+  },
+  "fundedBeforeSchedule": true,
+  "fundingBlockTimestamp": "1793417596",
+  "unknownResultAtFunding": {
+    "endAt": null,
+    "id": 1713127,
+    "modifiedAt": "2026-10-30T17:04:45Z",
+    "scheduledAt": "2026-10-31T06:00:00Z",
+    "status": "not_started",
+    "teamAId": 138767,
+    "teamBId": 13719,
+    "winnerId": null
+  },
+  "nonfinal": {
+    "method": "eth_call at an actual historical Base Sepolia block; no clock warp",
+    "blockNumber": "52478821",
+    "blockTimestamp": "1793417633",
+    "signedAt": "1793417631",
+    "rejection": "ResultNotFinal",
+    "reserveThenWei": "100000000000000",
+    "reserveNowWei": "100000000000000"
+  },
+  "chain": {
+    "state": 1,
+    "winningTeam": "0",
+    "paidTo": "0x0000000000000000000000000000000000000000",
+    "acceptedProofHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "balanceWei": "100000000000000"
+  },
+  "tamper": [
+    {
+      "case": "stale",
+      "reason": "ResponseTooOld",
+      "txHash": "0xeb69eaf358476574270cb385fd5cb0a7f490f3c1d59ab97bb0cd4069f12ee241",
+      "status": "reverted"
+    },
+    {
+      "case": "edited",
+      "reason": "NotSignedByAirnode",
+      "txHash": "0x8c8b702d5dd896328916d96612df6378d8ed9c73973fa90eec7a8c06683ade9d",
+      "status": "reverted"
+    },
+    {
+      "case": "wrong-request",
+      "reason": "NotSignedByAirnode",
+      "txHash": "0xc58a78516f3f150b0908dd97db47d4a41848b8dcac28fe790c0d252dea700e32",
+      "status": "reverted"
+    },
+    {
+      "case": "wrong-signer",
+      "reason": "NotSignedByAirnode",
+      "txHash": "0xeaa952a314929b1f399aa1f4671900a7937f50f102124d54132302dd9da92998",
+      "status": "reverted"
+    }
+  ],
+  "liveTerminal": "PENDING"
+}

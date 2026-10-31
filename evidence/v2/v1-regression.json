@@ -1,0 +1,10 @@
+{
+  "checkedAt": "31.10.2026 04:42:30 Europe/Berlin",
+  "baselineCommit": "7ef30b375ea02b84736d5a39654cb7cec7866b4b",
+  "v1ContractSourceUnchanged": true,
+  "v1TrackedEvidenceUnchanged": true,
+  "v1Contract": "0x1ecea4fec536541e494fbf48c3296b10ce7dc502",
+  "v1Payout": "0x0b2be2f04133ec2131040e26828101f600aaa7cc49eb30ed5e9f6a32398299f3",
+  "browser": "Settled match link returned V1 Paid with original team wallets and payout",
+  "isolationTests": "Concurrent ALS scope, separate lock/executor, identical intent ID isolation PASS"
+}

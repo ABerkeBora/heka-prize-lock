@@ -1,0 +1,135 @@
+[
+  {
+    "case": "stale",
+    "status": "rejected",
+    "accepted": false,
+    "reason": "ResponseTooOld",
+    "checkedAt": "2026-10-31T03:35:43.214Z",
+    "method": "confirmed transaction",
+    "contract": "0x1f4f2052dcb0fb93b560331bc9e1892b057b6d84",
+    "proofHash": "0x11734168c93259bba0915575b2dd0b5674d46ebe4c541e4182a962736ceb3da1",
+    "before": {
+      "state": 1,
+      "winningTeam": "0",
+      "paidTo": "0x0000000000000000000000000000000000000000",
+      "acceptedProofHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "balanceWei": "100000000000000"
+    },
+    "txHash": "0xeb69eaf358476574270cb385fd5cb0a7f490f3c1d59ab97bb0cd4069f12ee241",
+    "receipt": {
+      "transactionHash": "0xeb69eaf358476574270cb385fd5cb0a7f490f3c1d59ab97bb0cd4069f12ee241",
+      "blockNumber": "52479378",
+      "status": "reverted",
+      "contractAddress": null,
+      "gasUsed": "33020",
+      "effectiveGasPrice": "6000000",
+      "l1FeeWei": "1331",
+      "gasCostWei": "198120001331"
+    },
+    "after": {
+      "state": 1,
+      "winningTeam": "0",
+      "paidTo": "0x0000000000000000000000000000000000000000",
+      "acceptedProofHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "balanceWei": "100000000000000"
+    },
+    "prizeUnchanged": true
+  },
+  {
+    "case": "wrong-request",
+    "status": "rejected",
+    "accepted": false,
+    "reason": "NotSignedByAirnode",
+    "checkedAt": "2026-10-31T03:37:06.980Z",
+    "method": "confirmed transaction",
+    "contract": "0x1f4f2052dcb0fb93b560331bc9e1892b057b6d84",
+    "proofHash": "0x5d2a0f1f7135d7b7ac9fc5b0e3787667bdb10702c210fa628a131b22f4f1b6d4",
+    "before": {
+      "state": 1,
+      "winningTeam": "0",
+      "paidTo": "0x0000000000000000000000000000000000000000",
+      "acceptedProofHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "balanceWei": "100000000000000"
+    },
+    "txHash": "0xc58a78516f3f150b0908dd97db47d4a41848b8dcac28fe790c0d252dea700e32",
+    "receipt": {
+      "transactionHash": "0xc58a78516f3f150b0908dd97db47d4a41848b8dcac28fe790c0d252dea700e32",
+      "blockNumber": "52479798",
+      "status": "reverted",
+      "contractAddress": null,
+      "gasUsed": "1394170",
+      "effectiveGasPrice": "6004042",
+      "l1FeeWei": "38360",
+      "gasCostWei": "8370655273500"
+    },
+    "after": {
+      "state": 1,
+      "winningTeam": "0",
+      "paidTo": "0x0000000000000000000000000000000000000000",
+      "acceptedProofHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "balanceWei": "100000000000000"
+    },
+    "prizeUnchanged": true
+  },
+  {
+    "case": "wrong-signer",
+    "status": "rejected",
+    "accepted": false,
+    "reason": "NotSignedByAirnode",
+    "checkedAt": "2026-10-31T03:37:10.131Z",
+    "method": "confirmed transaction",
+    "contract": "0x1f4f2052dcb0fb93b560331bc9e1892b057b6d84",
+    "proofHash": "0x11734168c93259bba0915575b2dd0b5674d46ebe4c541e4182a962736ceb3da1",
+    "before": {
+      "state": 1,
+      "winningTeam": "0",
+      "paidTo": "0x0000000000000000000000000000000000000000",
+      "acceptedProofHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "balanceWei": "100000000000000"
+    },
+    "txHash": "0xeaa952a314929b1f399aa1f4671900a7937f50f102124d54132302dd9da92998",
+    "receipt": {
+      "transactionHash": "0xeaa952a314929b1f399aa1f4671900a7937f50f102124d54132302dd9da92998",
+      "blockNumber": "52479812",
+      "status": "reverted",
+      "contractAddress": null,
+      "gasUsed": "32990",
+      "effectiveGasPrice": "6001732",
+      "l1FeeWei": "1327",
+      "gasCostWei": "197997140007"
+    },
+    "after": {
+      "state": 1,
+      "winningTeam": "0",
+      "paidTo": "0x0000000000000000000000000000000000000000",
+      "acceptedProofHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "balanceWei": "100000000000000"
+    },
+    "prizeUnchanged": true
+  },
+  {
+    "case": "edited",
+    "status": "rejected",
+    "accepted": false,
+    "reason": "NotSignedByAirnode",
+    "checkedAt": "2026-10-31T03:39:39.153Z",
+    "method": "eth_call on Base Sepolia",
+    "contract": "0x1f4f2052dcb0fb93b560331bc9e1892b057b6d84",
+    "proofHash": "0x8b5b6c559370fd3e88984ff5ac54baa9c23547484828005bcbb1acf4ff30de73",
+    "before": {
+      "state": 1,
+      "winningTeam": "0",
+      "paidTo": "0x0000000000000000000000000000000000000000",
+      "acceptedProofHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "balanceWei": "100000000000000"
+    },
+    "after": {
+      "state": 1,
+      "winningTeam": "0",
+      "paidTo": "0x0000000000000000000000000000000000000000",
+      "acceptedProofHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "balanceWei": "100000000000000"
+    },
+    "prizeUnchanged": true
+  }
+]
